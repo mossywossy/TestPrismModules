@@ -6,6 +6,10 @@
              xmlns:prismregions="clr-namespace:Prism.Regions.Xaml;assembly=Prism.Forms.Regions"
              Title="{Binding Title}">
 
-    <FlexLayout   AlignItems="Start" AlignContent="Start" JustifyContent="SpaceEvenly" prismregions:RegionManager.RegionName="FlexRegion"/>
+    <StackLayout Orientation="Vertical">
+        <Button Command="{Binding LoadModuleCommand}" Text="Load Module"/>
+<FlexLayout   AlignItems="Start" AlignContent="Start" JustifyContent="SpaceEvenly" prismregions:RegionManager.RegionName="FlexRegion"/>
 
+    </StackLayout>
+    
 </ContentPage>
