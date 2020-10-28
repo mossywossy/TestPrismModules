@@ -3,9 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestPrismModules.Views.MainPage"
              xmlns:prism="http://prismlibrary.com"
-             xmlns:prismregions="clr-namespace:Prism.Regions.Xaml;assembly=Prism.Forms.Regions"
              Title="{Binding Title}">
 
-    <FlexLayout   AlignItems="Start" AlignContent="Start" JustifyContent="SpaceEvenly" prismregions:RegionManager.RegionName="FlexRegion"/>
+    <StackLayout Orientation="Vertical">
+        <Button Command="{Binding LoadModuleCommand}" Text="Load Module"/>
+<FlexLayout   AlignItems="Start" AlignContent="Start" JustifyContent="SpaceEvenly" prism:RegionManager.RegionName="FlexRegion"/>
 
+    </StackLayout>
+    
 </ContentPage>
